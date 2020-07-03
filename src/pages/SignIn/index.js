@@ -1,9 +1,15 @@
 import React, { useState, useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import { StatusBar, Image } from 'react-native';
 
-import { Container, Input, ErrorLabel, SubmitButton } from './styles';
-import logo from '~/assets/logo-green.png';
+import {
+  Container,
+  PurpleStatusBar,
+  LogoImage,
+  Input,
+  ErrorLabel,
+  SubmitButton,
+} from './styles';
+import logo from '~/assets/fastfeet-logo.png';
 
 import { signInRequest } from '~/store/modules/auth/actions';
 
@@ -25,9 +31,10 @@ export default function SignIn() {
 
   return (
     <>
-      <StatusBar barStyle="light-content" backgroundColor="#7D40E7" />
+      <PurpleStatusBar barStyle="light-content" backgroundColor="#7D40E7" />
       <Container>
-        <Image source={logo} tintColor="#fff" />
+        <LogoImage source={logo} tintColor="#fff" />
+
         <Input
           keyboardType="number-pad"
           autoCorrect={false}

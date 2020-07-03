@@ -1,16 +1,26 @@
 import styled from 'styled-components/native';
-import { darken } from 'polished';
+import { darken, lighten } from 'polished';
+import { StatusBar, Image } from 'react-native';
 import Button from '~/components/Button';
+
+import { colors } from '~/styles/colors';
 
 export const Container = styled.SafeAreaView`
   flex: 1;
-  background-color: #7d40e7;
+  background-color: ${lighten(0.2, colors.primary)};
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   padding: 45px;
 `;
+
+export const PurpleStatusBar = styled(StatusBar).attrs({
+  barStyle: 'light-content',
+  backgroundColor: `${lighten(0.2, colors.primary)}`,
+})``;
+
+export const LogoImage = styled(Image)``;
 
 export const Input = styled.TextInput.attrs({
   placeholderTextColor: '#999',
@@ -35,7 +45,9 @@ export const ErrorLabel = styled.Text`
   font-size: 15px;
 `;
 
-export const SubmitButton = styled(Button).attrs({ color: '#82BF18' })`
+export const SubmitButton = styled(Button).attrs({
+  color: `${colors.primary};`,
+})`
   align-self: stretch;
   margin-top: 15px;
 `;
