@@ -18,7 +18,7 @@ export default function Header() {
   const dispatch = useDispatch();
   const profile = useSelector((store) => store.deliveryman.profile);
   const { name } = profile;
-  console.tron.log(profile);
+
   function logout() {
     dispatch(signOut());
   }

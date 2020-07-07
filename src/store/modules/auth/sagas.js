@@ -14,10 +14,7 @@ export function* signIn({ payload }) {
 
     yield put(signInSuccess(response.data));
   } catch (err) {
-    Alert.alert(
-      'Authentication failure',
-      'There was an authentication error, please check your data.'
-    );
+    Alert.alert('Authentication failure');
     yield put(signFailure());
   }
 }

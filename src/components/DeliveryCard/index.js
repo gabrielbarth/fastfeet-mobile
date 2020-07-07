@@ -1,4 +1,5 @@
 import React from 'react';
+import { useNavigation } from '@react-navigation/native';
 import PropTypes from 'prop-types';
 
 import {
@@ -17,8 +18,8 @@ import {
 
 import Timeline from './Timeline';
 
-export default function DeliveryCard({ navigation, delivery }) {
-  console.tron.log(delivery);
+export default function DeliveryCard({ delivery }) {
+  const navigation = useNavigation();
   return (
     <Container
       style={{
@@ -36,8 +37,7 @@ export default function DeliveryCard({ navigation, delivery }) {
       <Footer>
         <FooterItem>
           <Small>Date</Small>
-          {/* <SubTitle>{delivery.formattedDate}</SubTitle> */}
-          <SubTitle>teste</SubTitle>
+          <SubTitle>{delivery.formattedDate}</SubTitle>
         </FooterItem>
 
         <FooterItem>
@@ -46,7 +46,7 @@ export default function DeliveryCard({ navigation, delivery }) {
         </FooterItem>
 
         <FooterItem>
-          <Button onPress={() => navigation.navigate('Detail', { delivery })}>
+          <Button onPress={() => navigation.navigate('Details', { delivery })}>
             <Small />
             <ButtonText>See details</ButtonText>
           </Button>
@@ -55,6 +55,10 @@ export default function DeliveryCard({ navigation, delivery }) {
     </Container>
   );
 }
+
+DeliveryCard.defaultProps = {
+  navigation: undefined,
+};
 
 DeliveryCard.propTypes = {
   delivery: PropTypes.shape({
@@ -68,5 +72,5 @@ DeliveryCard.propTypes = {
   }).isRequired,
   navigation: PropTypes.shape({
     navigate: PropTypes.func.isRequired,
-  }).isRequired,
+  }),
 };

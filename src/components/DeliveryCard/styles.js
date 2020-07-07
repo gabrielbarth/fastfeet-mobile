@@ -9,8 +9,6 @@ export const Container = styled.View`
   border-radius: 4px;
   background: ${colors.background};
   margin-bottom: 15px;
-  margin-left: 5px;
-  margin-right: 5px;
 `;
 
 export const Content = styled.View`

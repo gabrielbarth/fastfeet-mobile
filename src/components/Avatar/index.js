@@ -9,9 +9,10 @@ export default function Avatar({ size, name, avatar }) {
 
   return (
     <Container size={size}>
-      <Letters size={size}>{letters}</Letters>
-      {avatar && avatar.url && (
+      {!!avatar && !!avatar.url ? (
         <Image size={size} source={{ uri: avatar.url }} />
+      ) : (
+        <Letters size={size}>{letters}</Letters>
       )}
     </Container>
   );

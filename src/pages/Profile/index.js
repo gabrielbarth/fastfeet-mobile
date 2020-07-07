@@ -6,6 +6,8 @@ import PropTypes from 'prop-types';
 import Icon from 'react-native-vector-icons/MaterialIcons';
 
 import { signOut } from '~/store/modules/auth/actions';
+
+import { colors } from '~/styles/colors';
 import {
   Container,
   AvatarContainer,
@@ -17,7 +19,7 @@ import {
 
 export default function Profile() {
   const profile = useSelector((store) => store.deliveryman.profile);
-  // const formattedData = format(parseISO(profile.createdAt), 'dd/MM/yyyy');
+  const formattedDate = format(parseISO(profile.created_at), 'MMMM dd, yyyy');
   const dispatch = useDispatch();
 
   function handleLogout() {
@@ -26,20 +28,20 @@ export default function Profile() {
 
   return (
     <>
-      <StatusBar barStyle="dark-content" backgroundColor="#FFF" />
+      <StatusBar barStyle="dark-content" backgroundColor={colors.background} />
       <Container>
         <AvatarContainer>
           <Avatar name={profile.name} avatar={profile.avatar} />
         </AvatarContainer>
 
-        <Title>Nome Completo</Title>
+        <Title>Full name</Title>
         <SubTitle>{profile.name}</SubTitle>
 
-        <Title>Email</Title>
+        <Title>E-mail</Title>
         <SubTitle>{profile.email}</SubTitle>
 
-        <Title>Data de cadastro</Title>
-        <SubTitle>data..</SubTitle>
+        <Title>Register date</Title>
+        <SubTitle>{formattedDate}</SubTitle>
 
         <LogoutButton onPress={handleLogout}>Logout</LogoutButton>
       </Container>
