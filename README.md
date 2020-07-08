@@ -35,10 +35,10 @@ This application allows:
 ##  :iphone:  Interfaces view
 
 <p align="center">
-  <img alt="IMAGE.GIF" title="html-image" src="./app-images/gif1.gif" width="900px" /> 
+  <img alt="IMAGE.GIF" title="html-image" src="./app-images/gif1.gif" width="800px" /> 
 </p>
 <p align="center">
-  <img alt="IMAGE.GIF" title="html-image" src="./app-images/gif2.gif" width="900px" /> 
+  <img alt="IMAGE.GIF" title="html-image" src="./app-images/gif2.gif" width="800px" /> 
 </p>
 
 
