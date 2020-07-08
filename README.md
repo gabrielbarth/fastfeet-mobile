@@ -10,6 +10,7 @@
 :floppy_disk: Backend version <a href="https://github.com/gabrielbarth/fastfeet-backend"> here</a>
 </h3>
 
+:us:
 <br>
 Mobile aplication that allows delivery management for deliverymen. It was developed for GoStack10 bootcamp final challange.
 <br>
