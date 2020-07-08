@@ -43,7 +43,7 @@ export default function Problems() {
         const { data } = await api.get(`/delivery/${deliveryId}/problems`);
         setProblems(formattedProblems(data));
       } catch (err) {
-        Alert.alert(err.response.data.error);
+        Alert.alert('Error', err.response.data.error);
       }
     }
     fetchProblems();

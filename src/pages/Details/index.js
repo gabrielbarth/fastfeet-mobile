@@ -46,7 +46,7 @@ export default function Details() {
 
         navigation.navigate('Deliveries');
       } catch (err) {
-        Alert.alert('Invalid action');
+        Alert.alert('Invalid action', err.response.data.error);
       }
     }
 
