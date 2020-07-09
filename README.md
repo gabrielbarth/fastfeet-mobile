@@ -20,7 +20,7 @@ Mobile aplication that allows delivery management for deliverymen. It was develo
 Aplicativo para permitir gestão de encomendas pelos entregadores. Desenvolvido durante o desafio final do bootcamp GoStack10.
 
 
-## :mag_right: Overview / Visão geral
+## :mag_right: Overview
 
 This application allows:
 
@@ -62,7 +62,7 @@ This application allows:
 :heavy_check_mark: [**react-native-vector-icons**](https://github.com/oblador/react-native-vector-icons) `// icons for react-native` <br>
 
 
-**Bibliotecas de desenvolvimento utilizadas no projeto:** <br>
+**Development dependencies:** <br>
 
 :heavy_check_mark: [**eslint**](https://eslint.org/) `// allows find and fix problems in your JavaScript code` <br>
 :heavy_check_mark: [**prettier**](https://prettier.io/)  `// sequelize client - ORM for SQL databases` <br>
