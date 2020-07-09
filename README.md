@@ -65,7 +65,7 @@ This application allows:
 **Development dependencies:** <br>
 
 :heavy_check_mark: [**eslint**](https://eslint.org/) `// allows find and fix problems in your JavaScript code` <br>
-:heavy_check_mark: [**prettier**](https://prettier.io/)  `// sequelize client - ORM for SQL databases` <br>
+:heavy_check_mark: [**prettier**](https://prettier.io/)  `//code formatter, makes code prettier` <br>
 
 
 ## :computer: Getting Started - Running on your machine
