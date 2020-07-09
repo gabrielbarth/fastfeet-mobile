@@ -85,7 +85,8 @@ Now follow the bellow steps to run project on your machine:
 **2.** Move to the appropriate directory: `cd fastfeet-mobile`.<br />
 **3.** Run `yarn` to install dependencies.<br />
 **4.** Now consider running the follow commands to ports redirect: `adb reverse tcp:9090 tcp:9090` (for using reactotron),`adb reverse tcp:3333 tcp:3333` and `adb reverse tcp:8181 tcp:8181` (for physical device) <br />
-**5.** Run `react-native run-android` and after `react-native start` to run the app on your device or simulator.<br/>
+**5.** Remember running backend project and databases on docker;
+**6.** Run `react-native run-android` and after `react-native start` to run the app on your device or simulator.<br/>
 
 ## :bulb: :handshake: Contributing
 Please feel free to contributing and submitting pull requests.
